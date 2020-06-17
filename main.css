@@ -1,0 +1,120 @@
+
+
+/* Potential Color Schemes */
+/* Cool Blues Canva.com
+#003B46 Deep Aqua
+#07575B Ocean
+#66A5AD Wave
+#C4DFE6 Sea foam */
+
+
+/***************************************
+    Basic Resets
+ **************************************/
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #C4DFE6;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/***************************************
+    Fonts
+ **************************************/
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+/***************************************
+    Header
+ **************************************/
+
+.header {
+    background-color: #003B46;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px 0px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 25px;
+    color: #66A5AD;
+}
+
+/***************************************
+    Main Content
+ **************************************/
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+/***************************************
+    Game Content
+ **************************************/
+
+.game-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-content h1 {
+    text-align: center;
+}
+
+.game-content > .button {
+    background-color: #66A5AD;
+    padding: 15px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.game-content > .button:active {
+    background-color: #003B46;
+}
+
+/***************************************
+    Game Board
+ **************************************/
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+    margin-top: 100px;
+}
+
+.game-board > .grid-square {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+/* Create the Hash Layout Design */
+
+.game-board > .grid-square:nth-child(2), .game-board > .grid-square:nth-child(8),
+.game-board > .grid-square:nth-child(5) {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.game-board > .grid-square:nth-child(4), .game-board > .grid-square:nth-child(6),
+.game-board > .grid-square:nth-child(5) {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+/* X's will be red, and O's will be blue */
+
