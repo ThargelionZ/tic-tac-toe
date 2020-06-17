@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         winState = false;
         winBanner.remove();
+        isXTurn = true;
     });
 
     function winCheck(letterChecked) {
